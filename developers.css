@@ -123,9 +123,6 @@ nav .gg{
 
 
 @media only screen and  (max-width: 1000px){
-    .row{
-        flex-flow: column;
-    }
 }
 /*----- Developers --- */
 
@@ -133,8 +130,7 @@ nav .gg{
     width: 90%;
     margin: auto;
     text-align: center;
-    padding-top: 100px; 
-
+    padding-top: 100px;
 }
 h1{
     font-size: 36px;
@@ -150,7 +146,7 @@ p{
 }
 
 .row{
-    margin-top: 5%;
+    margin-top: 2%;
     display: flex;
     justify-content: space-between;
 }
@@ -161,6 +157,8 @@ p{
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
+    position:initial;
+    overflow: hidden;
     box-sizing: border-box;
     transition: 0.5s;
 }

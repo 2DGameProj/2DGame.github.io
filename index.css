@@ -138,12 +138,12 @@ nav .gg{
 }
 
 h1{
-    padding-top: -100px;
+    padding-top: 60px;
     color:#000;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 }
 .row{
-    margin-top: 5%;
+    margin-top: 2%;
     display: flex;
     justify-content: space-between;
 
@@ -152,10 +152,11 @@ h1{
 .menuimages-col{
     flex-basis: 24%;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
     overflow: hidden;
 }
+
 .menuimages-col img{
     width: 100%;
     display: block;
@@ -192,56 +193,3 @@ h1{
     bottom: 49%;
     opacity: 1;
 }
-
-
-
-/*-------Textures------
-.Textures{
-    width: 90%;
-    margin: auto;
-    text-align: center;
-}
-
-body{
-    background: #fff;
-}
-
-h1{
-    padding-top: -100px;
-    color:#000;
-    padding-bottom: 100px;
-}
-
-.row{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.Textures-col{
-    flex-basis: 24%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-
-.Textures-col img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-.Textures-col p{
-    color: rgb(27, 27, 27);
-    text-align: center;
-    padding: 0;
-}
-
-.Textures-col h3{
-    color: #000;
-    margin-top: 16px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-*/
