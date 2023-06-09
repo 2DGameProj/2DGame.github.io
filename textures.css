@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cascadia Code', sans-serif;
+}
+
+body{
+    background-color: #fff;
+}
+
+nav{
+    display: flex;
+    padding: 1% 3%;
+    justify-content: space-between;
+    align-items:  center;
+}
+nav img{
+    width: 110px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right; 
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #bbb;
+    text-decoration: none;
+    font-size: 26px;
+}   
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #19ff53;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    color:#fff;
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+nav .gg{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .gg{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+
+
+
+
+@media only screen and  (max-width: 1000px){
+    .row{
+        flex-flow: column;
+    }
+}
+
+
+
+/*-------Textures------*/
+.Textures{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    padding-top: -100px;
+    color:#000;
+    padding-bottom: 100px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Textures-col{
+    flex-basis: 24%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.Textures-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.Textures-col p{
+    color: rgb(27, 27, 27);
+    text-align: center;
+    padding: 0;
+}
+
+.Textures-col h3{
+    color: #000;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
