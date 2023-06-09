@@ -11,8 +11,8 @@
 <section class = "header">
         <nav>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img src = "images/logo.png" width="100" height="90"> </a>
+        <!--<button aria-expanded="false" aria-controls="menu">Раскрыть меню</button>-->
         <div class="nav-links" id = "navLinks">
-        <i class="gg gg-close" onclick ="hideMenu()"></i>
             <ul>
                 <li> <a href = "./index.html">Home</a> </li>
                 <li> <a href = "./developers.html">Developers</a> </li>
@@ -20,13 +20,36 @@
                 <li> <a href = "">Contact</a> </li>
             </ul>
         </div>
-        <i class="gg gg-menu" onclick ="showMenu()"></i>
+        
+
+        <div class="pcmenu">
+            <input type="checkbox" id="side-checkbox" />
+            <div class="side-panel">
+                <label class="side-button-2" for="side-checkbox">+</label>    
+                <div class="side-title"></div>
+                <li> <a href = "./index.html">Home</a> </li>
+                <li> <a href = "./developers.html">Developers</a> </li>
+                <li> <a href = "./textures.html">Textures</a> </li>
+            </div>
+            <div class="side-button-1-wr">
+                <label class="side-button-1" for="side-checkbox">
+                    <div class="side-b side-open">Открыть</div>
+                    <div class="side-b side-close">Закрыть</div>
+                </label>
+            </div>
+        </div>
         </nav>
 
 <div class="text-box">
     <h1>2DGame about zombie</h1>
 </div>
 </section>
+
+
+<Section class="test">
+    
+
+</Section>
 
 <!----menuimages---->
 <section class="menuimages">
@@ -70,7 +93,6 @@
         navLinks.style.right = "0";
     }
     function hideMenu(){
-        navLinks.style.right = "-200px";
     }
 
 </script>
