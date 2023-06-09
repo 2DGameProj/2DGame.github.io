@@ -4,6 +4,7 @@
     font-family: 'Cascadia Code', sans-serif;
 }
 .header{
+
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(30, 15, 58, 0.397),rgba(30, 15, 58, 0.219)), url(images/banner.png);
@@ -12,6 +13,7 @@
     position: relative;
 
 }
+
 nav{
     display: flex;
     padding: 1% 3%;
