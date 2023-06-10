@@ -8,7 +8,7 @@
         <link href=" https://cdn.jsdelivr.net/npm/css.gg@2.0.0/icons/all.min.css " rel="stylesheet">
     </head>
 
-    <body>
+<body>
         <section class = "header2">
             <nav>
             <a href="index.html"> <img src = "images/logo.png" width="100" height="90"> </a>
@@ -21,14 +21,29 @@
                     <li> <a href = "">Contact</a> </li>
                 </ul>
             </div>
-            <i class="gg gg-menu" onclick ="showMenu()"></i>
-            </nav>
-    
-    </section>
-    </body>
+            <i class="gg gg-menu" onclick ="showMenu()"></i>        
 
+        <div class="pcmenu">
+            <input type="checkbox" id="side-checkbox" />            
+            <div class="side-panel">
+                <label class="side-button-2" for="side-checkbox">+</label>    
+                <div class="side-title"></div>
+                   <li> <a href = "./index.html">Home</a> </li>
+                   <li> <a href = "./developers.html">Developers</a> </li>
+                   <li> <a href = "./textures.html">Textures</a> </li>
+                </div>
+            <div class="side-button-1-wr">
+                <label class="side-button-1" for="side-checkbox">
+                    <div class="side-b side-open"><i class="gg-menu"></i></div>
+                    <div class="side-b side-close"></div>
+                </label>
+            </div>
+        </div>
+        </nav>
+    </section>
     
-<!----- Developers --->
+    
+    <!----- Developers --->
     <section class = "Developers">
         <h1>Команда разработчиков</h1>
         <div class ="row">
@@ -50,6 +65,7 @@
             </div>
         </div>
     </section>
+</body>
 </html>
 
 
