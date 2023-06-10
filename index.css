@@ -116,7 +116,7 @@
 
 
 body{
-    color: #fff;
+    background: #000;
 }
 
 nav{
@@ -240,7 +240,7 @@ nav .gg{
 
 h1{
     padding-top: 60px;
-    color:#000;
+    color:#fff;
     padding-bottom: 0px;
 }
 .row{

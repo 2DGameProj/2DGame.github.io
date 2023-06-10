@@ -5,7 +5,7 @@
 }
 
 body{
-    background: rgba(19,0,53,0.5);
+    background: black;
 }
 
 .locked {
@@ -260,13 +260,13 @@ h1{
 }
 
 .Textures-col p{
-    color: rgb(27, 27, 27);
+    color: #bbb;
     text-align: center;
     padding: 0;
 }
 
 .Textures-col h3{
-    color: #000;
+    color: #fff;
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: center;
