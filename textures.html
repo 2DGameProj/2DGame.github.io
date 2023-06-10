@@ -6,23 +6,56 @@
         <link rel = "stylesheet" href = "textures.css">
         <link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
         <link href=" https://cdn.jsdelivr.net/npm/css.gg@2.0.0/icons/all.min.css " rel="stylesheet">
+        <meta http-equiv="imagetoolbar" content="no" />
+
+        <script>
+
+            (function () {
+                "use strict";                
+                var el = document.createElement('div');
+                el.style.cssText = 'pointer-events:auto';
+                
+                if (el.style.pointerEvents !== 'auto') {
+                    el = null;
+                    
+                    var _lock = function (evt) {
+                        evt = evt || window.event;
+                        var el = evt.target || evt.srcElement;
+                        if (el && /\slocked\s/.test(' ' + el.className + ' ')) {
+                            if (evt.stopPropagation) {
+                                evt.preventDefault();
+                                evt.stopPropagation();
+                            } else {
+                                evt.returnValue = true;
+                                evt.cancelBubble = true;
+                            }
+                        }
+                    };
+                    
+                    if (document.addEventListener) {
+                        document.addEventListener('mousedown', _lock, false);
+                        document.addEventListener('contextmenu', _lock, false);
+                    } else {
+                        document.attachEvent('onmousedown', _lock);
+                        document.attachEvent('oncontextmenu', _lock);
+                    }
+                }
+            })();
+        </script>
     </head>
     
-    <body>
-        <section class = "header3">
-            <nav>
+<body>
+    <section class = "header3">
+        <nav>
             <a href="index.html"> <img src = "images/logo.png" width="100" height="90"> </a>
             <div class="nav-links" id = "navLinks">
-            <i class="gg gg-close" onclick ="hideMenu()"></i>
                 <ul>
                     <li> <a href = "./index.html">Home</a> </li>
                     <li> <a href = "./developers.html">Developers</a> </li>
                     <li> <a href = "./textures.html">Textures</a> </li>
                     <li> <a href = "">Contact</a> </li>
                 </ul>
-            </div>
-            <i class="gg gg-menu" onclick ="showMenu()"></i>        
-
+            </div>   
         <div class="pcmenu">
             <input type="checkbox" id="side-checkbox" />            
             <div class="side-panel">
@@ -46,66 +79,66 @@
         <h1>Our Textures</h1>
         <div class="row">
             <div class="Textures-col">
-                <img src="textures/grass/Grass_1.png" loading="lazy" weight="100%" height="100%">
+                <img class="locked" src="textures/grass/Grass_1.png" loading="lazy" weight="100%" height="100%"/>
                 <h3>Grass texture</h3>
                 <p>made from murderous</p>
             </div>
             <div class="Textures-col">
-                <img src="textures/houses/Home_1.png"loading="lazy" weight="100%" height="100%">
+                <img class="locked" src="textures/houses/Home_1.png"loading="lazy" weight="100%" height="100%"/>
                 <h3>House Textures</h3>
                 <p>made from murderous</p>
             </div>
             <div class="Textures-col">
-                <img src="textures/characters/survivor.png"loading="lazy" weight="100%" height="100%">
+                <img class="locked" src="textures/characters/survivor.png"loading="lazy" weight="100%" height="100%"/>
                 <h3>Survivor Textures</h3>
                 <p>Downloaded from internet</p>
             </div>
             <div class="Textures-col">
-                <img src="textures/characters/zombie.png"loading="lazy" weight="100%" height="100%">
+                <img class="locked" src="textures/characters/zombie.png"loading="lazy" weight="100%" height="100%"/>
                 <h3>Zombie Textures</h3>
                 <p>Downloaded from internet</p>
             </div>
         </div>
         <div class="row">
             <div class="Textures-col">
-                <img src="textures/roads/Straight road vertical.png" loading="lazy" weight="100%" height="100%">
+                <img class="locked" src="textures/roads/Straight road vertical.png" loading="lazy" weight="100%" height="100%"/>
                 <h3>Straight road vertical</h3>
                 <p>made from murderous</p>
             </div>
             <div class="Textures-col">
-                <img src="textures/roads/Broken straight road vertical.png"loading="lazy" weight="100%" height="100%">
+                <img class="locked" src="textures/roads/Broken straight road vertical.png"loading="lazy" weight="100%" height="100%"/>
                 <h3>Broken straight road vertical</h3>
                 <p>made from murderous</p>
             </div>
             <div class="Textures-col">
-                <img src="textures/roads/Straight road horizontal.png"loading="lazy" weight="100%" height="100%">
+                <img class="locked" src="textures/roads/Straight road horizontal.png"loading="lazy" weight="100%" height="100%"/>
                 <h3>Straight road horizontal</h3>
                 <p>made from murderous</p>
             </div>
             <div class="Textures-col">
-                <img src="textures/roads/Broken straight road horizontal.png"loading="lazy" weight="100%" height="100%">
+                <img class="locked" src="textures/roads/Broken straight road horizontal.png"loading="lazy" weight="100%" height="100%"/>
                 <h3>Broken straight road horizontal</h3>
                 <p>made from murderous</p>
             </div>
         </div>
         <div class="row">
             <div class="Textures-col">
-                <img src="textures/roads/Right turn.png" loading="lazy" weight="100%" height="100%">
+                <img class="locked" src="textures/roads/Right turn.png" loading="lazy" weight="100%" height="100%"/>
                 <h3>Right turn road</h3>
                 <p>made from murderous</p>
             </div>
             <div class="Textures-col">
-                <img src="textures/roads/Broken right turn.png"loading="lazy" weight="100%" height="100%">
+                <img class="locked" src="textures/roads/Broken right turn.png"loading="lazy" weight="100%" height="100%"/>
                 <h3>Broken right turn road</h3>
                 <p>made from murderous</p>
             </div>
             <div class="Textures-col">
-                <img src="textures/roads/Left turn.png"loading="lazy" weight="100%" height="100%">
+                <img class="locked" src="textures/roads/Left turn.png"loading="lazy" weight="100%" height="100%"/>
                 <h3>Left turn road</h3>
                 <p>made from murderous</p>
             </div>
             <div class="Textures-col">
-                <img src="textures/roads/Broken left turn.png"loading="lazy" weight="100%" height="100%">
+                <img class="locked" src="textures/roads/Broken left turn.png"loading="lazy" weight="100%" height="100%"/>
                 <h3>Broken left turn road</h3>
                 <p>made from murderous</p>
             </div>

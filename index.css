@@ -11,8 +11,6 @@
     background-position: center;
     background-size: cover;
     position: relative;
-
-    
 }
 
 .pcmenu{
@@ -37,11 +35,11 @@
     z-index: 999999;
     top: 0;
     right: -360px;
-    background: #337AB7;
+    background: rgba(19,0,53,0.3);
     transition: all 0.5s;   
     width: 170px;
     height: 100vh;
-    box-shadow: 10px 0 20px rgba(0,0,0,0.4);
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4);
     color: #FFF;
     padding: 40px 20px;
 }

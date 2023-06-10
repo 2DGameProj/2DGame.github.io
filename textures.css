@@ -4,6 +4,17 @@
     font-family: 'Cascadia Code', sans-serif;
 }
 
+body{
+    background: rgba(19,0,53,0.5);
+}
+
+.locked {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
 .pcmenu{
     display: none;
 }
@@ -26,7 +37,7 @@
     z-index: 999999;
     top: 0;
     right: -360px;
-    background: #337AB7;
+    background: rgba(19,0,53,0.3);
     transition: all 0.5s;   
     width: 170px;
     height: 100vh;
@@ -101,10 +112,6 @@
     transform: rotate(45deg) scale(1.1);    
     color: #FFF;
 }
-}
-
-body{
-    background-color: #fff;
 }
 
 nav{
@@ -229,7 +236,7 @@ nav .gg{
 h1{
     padding-top: -100px;
     color:#000;
-    padding-bottom: 100px;
+    padding-bottom: px;
 }
 
 .row{

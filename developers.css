@@ -4,6 +4,10 @@
     font-family: 'Cascadia Code', sans-serif;
 }
 
+
+body{
+    background: rgba(19,0,53,0.5)
+}
 .pcmenu{
     display: none;
 }
@@ -26,7 +30,7 @@
     z-index: 999999;
     top: 0;
     right: -360px;
-    background: #337AB7;
+    background: rgba(19,0,53,0.3);
     transition: all 0.5s;   
     width: 170px;
     height: 100vh;
@@ -222,6 +226,9 @@ nav .gg{
 
 
 @media only screen and  (max-width: 1000px){
+    .row{
+        flex-flow: column;
+    }
 }
 /*----- Developers --- */
 
@@ -252,7 +259,7 @@ p{
 
 .course-col{
     flex-basis: 24%;
-    background: #fff3f3;
+    background: #dd9d;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
