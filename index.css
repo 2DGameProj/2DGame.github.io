@@ -22,6 +22,7 @@
 
 .pcmenu{
     display: flex;
+    color: #fff;
 }
 .nav-links{
     display:none;
@@ -246,7 +247,7 @@ h1{
 .row{
     margin-top: 2%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
 }
 

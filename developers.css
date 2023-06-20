@@ -17,6 +17,7 @@ body{
 
 .pcmenu{
     display: flex;
+    color: #fff;
 }
 .nav-links{
     display:none;

@@ -6,44 +6,7 @@
         <link rel = "stylesheet" href = "textures.css">
         <link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
         <link href=" https://cdn.jsdelivr.net/npm/css.gg@2.0.0/icons/all.min.css " rel="stylesheet">
-        <meta http-equiv="imagetoolbar" content="no" />
-
-        <script>
-
-            (function () {
-                "use strict";                
-                var el = document.createElement('div');
-                el.style.cssText = 'pointer-events:auto';
-                
-                if (el.style.pointerEvents !== 'auto') {
-                    el = null;
-                    
-                    var _lock = function (evt) {
-                        evt = evt || window.event;
-                        var el = evt.target || evt.srcElement;
-                        if (el && /\slocked\s/.test(' ' + el.className + ' ')) {
-                            if (evt.stopPropagation) {
-                                evt.preventDefault();
-                                evt.stopPropagation();
-                            } else {
-                                evt.returnValue = true;
-                                evt.cancelBubble = true;
-                            }
-                        }
-                    };
-                    
-                    if (document.addEventListener) {
-                        document.addEventListener('mousedown', _lock, false);
-                        document.addEventListener('contextmenu', _lock, false);
-                    } else {
-                        document.attachEvent('onmousedown', _lock);
-                        document.attachEvent('oncontextmenu', _lock);
-                    }
-                }
-            })();
-        </script>
-    </head>
-    
+        <meta http-equiv="imagetoolbar" content="no" />  
 <body>
     <section class = "header3">
         <nav>
@@ -53,7 +16,7 @@
                     <li> <a href = "./index.html">Home</a> </li>
                     <li> <a href = "./developers.html">Developers</a> </li>
                     <li> <a href = "./textures.html">Textures</a> </li>
-                    <li> <a href = "">Contact</a> </li>
+                    <li> <a href = "https://drive.google.com/u/1/uc?id=1nWuqWU8_gXQFCkM0xG1VXoJSNM2Mp8X-&export=download&confirm=t&uuid=cdafe5e8-9585-4a5c-9e96-cce0eeaf1683&at=AKKF8vxAki94N8XEzykRqsDvs5xO:1687248905893">Download</a> </li>
                 </ul>
             </div>   
         <div class="pcmenu">
@@ -64,6 +27,7 @@
                    <li> <a href = "./index.html">Home</a> </li>
                    <li> <a href = "./developers.html">Developers</a> </li>
                    <li> <a href = "./textures.html">Textures</a> </li>
+                   <li> <a href = "https://drive.google.com/u/1/uc?id=1nWuqWU8_gXQFCkM0xG1VXoJSNM2Mp8X-&export=download&confirm=t&uuid=cdafe5e8-9585-4a5c-9e96-cce0eeaf1683&at=AKKF8vxAki94N8XEzykRqsDvs5xO:1687248905893">Download</a> </li>
                 </div>
             <div class="side-button-1-wr">
                 <label class="side-button-1" for="side-checkbox">
@@ -89,14 +53,14 @@
                 <p>made murderous</p>
             </div>
             <div class="Textures-col">
-                <img class="locked" src="textures/characters/survivor.png"loading="lazy" weight="100%" height="100%"/>
+                <img class="locked" src="textures/characters/human.png"loading="lazy" weight="100%" height="100%"/>
                 <h3>Survivor Textures</h3>
-                <p>Downloaded from the internet</p>
+                <p>made murderous</p>
             </div>
             <div class="Textures-col">
                 <img class="locked" src="textures/characters/zombie.png"loading="lazy" weight="100%" height="100%"/>
                 <h3>Zombie Textures</h3>
-                <p>Downloaded from the internet</p>
+                <p>made murderous</p>
             </div>
         </div>
         <div class="row">
