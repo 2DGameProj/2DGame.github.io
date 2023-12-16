@@ -66,11 +66,15 @@
                 }
                 while ($row = pg_fetch_assoc($result))
                 {
+                    $v_minutes = (int)($row["total_time"] / 60);
+                    $v_seconds = (int)$row["total_time"] % 60;
+                    $v_milliseconds = (int)($row["total_time"] * 1000) % 1000;
+                    $row["formated_time"] = sprintf("%02d:%02d:%03d", $v_minutes, $v_seconds, $v_milliseconds);
                     echo "<tr>";
                     echo "<td>".$row['nickname']."</td>";
                     echo "<td>".$row["kill_count"]."</td>";
                     echo "<td>".$row["score_count"]."</td>";
-                    echo "<td>".$row["total_time"]."</td>";
+                    echo "<td>".$row["formated_time"]."</td>";
                     echo "</tr>";
                 }
                 echo "</table>";
