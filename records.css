@@ -20,21 +20,25 @@
     display: none;
 }
 
-table {
-    position: absolute;
+table{
+    position: relative;
+    top: 50%;
+    left: 10%
 }
+
 table, p{
     color: #fff;
 }
 
-table, td{
-    border: 1px solid #333;
-
-
+table, th{
+    border-right: 5px solid #333;
+    border-left: 5px solid #333;
 }
 
-.table-style {
-    position: relative;
+table, td{
+    border: 5px solid #333;
+    font-size: 100px;
+
 }
 
 @media(max-width: 1000px){
@@ -43,6 +47,7 @@ table, td{
     display: flex;
     color: #fff;
 }
+
 .nav-links{
     display:none;
 }
