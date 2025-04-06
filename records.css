@@ -20,25 +20,36 @@
     display: none;
 }
 
-table{
-    position: relative;
-    top: 50%;
-    left: 10%
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-table, p{
-    color: #fff;
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
 }
 
-table, th{
-    border-right: 5px solid #333;
-    border-left: 5px solid #333;
+th {
+    background-color: #4CAF50;
+    color: white;
 }
 
-table, td{
-    border: 5px solid #333;
-    font-size: 100px;
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
+tr:hover {
+    background-color: #ddd;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
 
 @media(max-width: 1000px){

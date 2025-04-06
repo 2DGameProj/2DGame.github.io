@@ -14,21 +14,20 @@
             <div class="nav-links" id = "navLinks">
                 <ul>
                     <li> <a href = "./index.html">Home</a> </li>
-                    <li> <a href = "./records.php"> Records</a> </li>
+                    <li> <a href = "./records.html"> Records</a> </li>
                     <li> <a href = "./developers.html">Developers</a> </li>
                     <li> <a href = "./textures.html">Textures</a> </li>
                     <li> <a href = "game/Plank Game.zip" download>Download</a> </li>
                 </ul>
             </div>
             
-
             <div class="pcmenu">
                 <input type="checkbox" id="side-checkbox" />            
                 <div class="side-panel">
                     <label class="side-button-2" for="side-checkbox">+</label>    
                     <div class="side-title"></div>
                     <li> <a href = "./index.html">Home</a> </li>
-                    <li> <a href = "./records.php"> Records</a></li>
+                    <li> <a href = "./records.html"> Records</a></li>
                     <li> <a href = "./developers.html">Developers</a> </li>
                     <li> <a href = "./textures.html">Textures</a> </li>
                     <li> <a href = "game/Plank Game.zip" download>Download</a> </li>
@@ -42,46 +41,26 @@
             </div>
         </div>
     </nav>
-    <?php
-        $conn_string = 
-        "host = dpg-clurgida73kc73bk2c9g-a.frankfurt-postgres.render.com
-        port=5432 
-        dbname=gamedb_j97j
-        user=gamedb_j97j_user 
-        password=kS2gdLdEWYY9FuoAhZihxybyZvbNV2B1";
-        $conn = pg_connect($conn_string);
-        if (!$conn) {
-            echo "Error";
-        }
-    ?>
-    <nav>
-        <div class = "table-style">
-                <?php 
-                echo "<table>";
-                echo"<tr><th>Nickname</th><th>kill count</th><th>Score</th><th>Time</th></tr>";
-                $result = pg_query($conn,"SELECT u.nickname, s.kill_count, s.score_count, se.total_time  FROM statistic s JOIN session se ON s.session_id = se.session_id JOIN \"user\" u ON se.\"HWID\" = u.\"HWID\"");
-                if(!$result)
-                {
-                    echo "Error in query!";
-                }
-                while ($row = pg_fetch_assoc($result))
-                {
-                    $v_minutes = (int)($row["total_time"] / 60);
-                    $v_seconds = (int)$row["total_time"] % 60;
-                    $v_milliseconds = (int)($row["total_time"] * 1000) % 1000;
-                    $row["formated_time"] = sprintf("%02d:%02d:%03d", $v_minutes, $v_seconds, $v_milliseconds);
-                    echo "<tr>";
-                    echo "<td>".$row['nickname']."</td>";
-                    echo "<td>".$row["kill_count"]."</td>";
-                    echo "<td>".$row["score_count"]."</td>";
-                    echo "<td>".$row["formated_time"]."</td>";
-                    echo "</tr>";
-                }
-                echo "</table>";
-                pg_free_result($result);
-                pg_close($conn);
-                ?>
+    <nav>        
+        <div class="container">
+            <h3>Рекорды игры</h3>
+    
+            <table id="recordsTable">
+                <thead>
+                    <tr>
+                        <th>Игрок</th>
+                        <th>Количество убийств</th>
+                        <th>Счёт</th>
+                        <th>Дата</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Данные будут добавлены здесь с помощью JS -->
+                </tbody>
+            </table>
+        </div>
     </nav>
     </section>
+    <script type="module" src="records.js"></script> <!-- Подключаем внешний JS -->
     </body>
 </html>
